@@ -1,38 +1,50 @@
-# create-svelte
+# API Playground
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A simple multiplayer game to teach [Rest APIs](https://en.wikipedia.org/wiki/REST)
+to classes of students.
 
-## Creating a project
+## How it works
 
-If you're seeing this, you've probably already done this step. Congrats!
+Currently, it doesn't. Once I get it working:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+* The class's instructor will display the game world on the classroom's screen.
+* The class members can join the playground (game world) and play simple games,
+  by controlling their character using the application's REST API.
+* More-advanced students can use the game world querying API to query the state
+  of the game world and create simple bots to play the games.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+To develop the application:
+
+### Installing dependencies
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+npm install
 ```
 
-## Building
+### Running the development server
 
-To create a production version of your app:
+```bash
+npm run dev  # -- --open
+```
+
+### Running the test suite
+
+```bash
+npm run test
+```
+
+### Running the linting
+
+```bash
+npm run lint  # -- --fix
+```
+
+### Creating a production build
 
 ```bash
 npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
