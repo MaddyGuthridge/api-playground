@@ -6,7 +6,7 @@ export type Player = {
   playerId: string
   /** Name of the player */
   name: string
-  /** Name  */
+  /** Team which the player belongs to */
   team: Team
   /** Position of the player in the form [x, y] */
   position: [number, number]
